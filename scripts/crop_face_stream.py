@@ -1,3 +1,11 @@
+'''
+show stream of only face image in video stream .
+ 
+'''
+
+
+
+
 import numpy as np
 import cv2
 import sys

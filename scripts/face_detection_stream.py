@@ -1,9 +1,11 @@
-import cv2
-import sys
+''' 
+    real time face detection.
 
+'''
+
+import cv2
 
 faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
 video_capture = cv2.VideoCapture(0)
 
 while True:

@@ -6,7 +6,9 @@
 import cv2
 
 faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-video_capture = cv2.VideoCapture(0)
+faceCascade = cv2.CascadeClassifier('stop_sign.xml')
+
+video_capture = cv2.VideoCapture(1)
 
 while True:
     # Capture frame-by-frame
@@ -22,7 +24,7 @@ while True:
 
     # Display the resulting frame
 
-    imS = cv2.resize(frame, (920, 540))
+    imS = cv2.resize(frame, (920, 680))
     cv2.imshow('Video', imS)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break

@@ -11,7 +11,7 @@ import cv2
 import sys
 
  
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # img = cv2.imread('19105910_729096427301581_4852294744866713988_n.jpg')
 	
